@@ -7,7 +7,7 @@
   }
 
   &__text-content {
-    padding-top: 88px;
+    padding-top: 4px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -24,6 +24,7 @@
     font-weight: 300;
     color: $mainBlue;
     margin: 0;
+    padding-bottom:40px;
     font-size: 2.4rem;
   
     @mixin atSmall {
@@ -48,10 +49,11 @@
     color: #FFF;
     font-size: 1.1rem;
     font-weight: 100;
-    text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
-    max-width: 30rem;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, .8);
+    max-width: 40rem;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 0;
 
     @mixin atSmall {
       font-size: 1.875rem;
