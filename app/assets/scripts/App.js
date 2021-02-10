@@ -7,7 +7,7 @@ import CurrentYear from './modules/CurrentYear'
 
 new CurrentYear()
 new StickyHeader()
-new RevealOnScroll(document.querySelectorAll(".feature-item"), 75)
+new RevealOnScroll(document.querySelectorAll(".services-item"), 75)
 new RevealOnScroll(document.querySelectorAll(".testimonial"), 60)
 new MobileMenu();
 let modal
