@@ -38,12 +38,11 @@ class Modal {
       <div class="wrapper wrapper--narrow">
         <p class="modal__description">You can get in touch with me through different channels, please choose the one which suits you most, I will get back to you as soon as I can.</p>
       </div>
-
       <div class="social-icons">
-        <a href="#" class="social-icons__icon"><img src="assets/images/icons/facebook.svg" alt="Facebook"></a>
-        <a href="#" class="social-icons__icon"><img src="assets/images/icons/twitter.svg" alt="Twitter"></a>
-        <a href="#" class="social-icons__icon"><img src="assets/images/icons/instagram.svg" alt="Instagram"></a>
-        <a href="#" class="social-icons__icon"><img src="assets/images/icons/youtube.svg" alt="YouTube"></a>
+        <a href="https://www.facebook.com/augusto.guimaraes.71" target="_blank" class="social-icons__icon-box"><i class="social-icons__icon fab fab fa-facebook-f"></i></a>
+        <a href="https://www.tripadvisor.com/Attraction_Review-g303506-d4976222-Reviews-TourGuideGus-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html" target="_blank" class="social-icons__icon-box"><i class="social-icons__icon fab fab fa-tripadvisor"></i></a>
+        <a href="https://www.instagram.com/augusto.guimaraes.71/?hl=en" target="_blank" class="social-icons__icon-box"><i class="social-icons__icon fab fab fa-instagram"></i></a>
+        <a href="https://wa.me/5521976601175" target="_blank" class="social-icons__icon-box"><i class="social-icons__icon fab fab fa-whatsapp"></i></a>
       </div>
     </div>
     <div class="modal__close">X</div>
