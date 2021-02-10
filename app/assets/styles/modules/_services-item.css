@@ -9,6 +9,9 @@
   &__icon {
     display: block;
     margin: 0 auto;
+    font-size: 4rem;
+    color: $mainOrange;
+    text-align: center;
 
     @mixin atSmall {
       position: absolute;
