@@ -63,7 +63,7 @@ if (currentTask == 'dev') {
     },
     contentBase: path.join(__dirname, 'app'),
     hot: true,
-    port: 3000,
+    port: 3002,
     host: '0.0.0.0'
   }
   config.mode = 'development'
