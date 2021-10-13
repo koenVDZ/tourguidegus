@@ -1,0 +1,92 @@
+.tours {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @mixin atLarge {
+    margin-bottom: 0;
+    padding: 0 1.8125rem 1px 1.8125rem;
+  }
+
+  &__icon {
+    color: $mainOrange;
+  }
+
+  &__tour {
+    width: 400px;
+    margin: 1rem;
+    background-color: $mainBlue;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 01.2);
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+  }
+
+  &__tour h3 {
+    padding: 1rem;
+    color: $mainOrange;
+  }
+
+  &__tour img {
+    width: 100%;
+  }
+
+  &__tour-info {
+    color: $mainOrange;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+  }
+
+  &__tour-info span {
+    background-color: $mainOrange;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+  }
+
+  &__tour-info h3 {
+    color: #fff;
+    margin-top: 0;
+  }
+
+  &__tour-desc {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+    background-color: #fff;
+    padding: 2rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-height: 100%;
+    transform: translateY(101%);
+    overflow-y: auto;
+    transition: transform 0.5s ease-in;
+  }
+
+  &__tour:hover &__tour-desc {
+    transform: translateY(0);
+  }
+
+  &__btn {
+    cursor: pointer;
+    height: 2rem;
+    background: linear-gradient(to top, #00154c, #12376e, #23487f);
+    color: #fff;
+    border: 0.1rem solid #fff;
+    border-radius: 0.3rem;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    margin: 1rem 0 0 0;
+    padding: 0 1rem;
+  }
+
+  &__btn-label {
+    cursor: pointer;
+    text-decoration: none;
+  }
+}

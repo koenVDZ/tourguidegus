@@ -5,19 +5,18 @@
   flex-wrap: wrap;
   justify-content: center;
 
-
   &__info {
     max-width: 960px;
     min-height: 450px;
     flex: 1 1 350px;
     background-color: $mainOrange;
-    color: #FFF;
+    color: #fff;
     padding: 5px;
     position: relative;
 
     @mixim atSmall {
       min-height: 400px;
-      padding: 10px ;
+      padding: 10px;
     }
 
     @mixim atMedium {
@@ -47,12 +46,12 @@
     font-size: 3rem;
 
     @mixim atXLarge {
-     font-size: 6rem;
+      font-size: 6rem;
     }
   }
 
   &__sub-text {
-    text-align:left;
+    text-align: left;
   }
 
   &__slider {
@@ -89,19 +88,20 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
   }
   &__anchor {
     text-align: center;
   }
 
   &__btn {
+    cursor: pointer;
     min-width: 10rem;
     height: 4rem;
     background: linear-gradient(to top, #00154c, #12376e, #23487f);
     color: #fff;
-    border: .1rem solid #fff;
-    border-radius: .3rem;
+    border: 0.1rem solid #fff;
+    border-radius: 0.3rem;
     padding: 1rem 2rem;
     outline: none;
     position: relative;
@@ -109,6 +109,7 @@
   }
 
   &__btn-label {
+    cursor: pointer;
     text-decoration: none;
   }
 
@@ -118,7 +119,7 @@
     left: 0;
     transform: translateY(-50%);
     width: 100%;
-    transition: top .2s;
+    transition: top 0.2s;
   }
 
   &__btn-text-two {
@@ -127,7 +128,7 @@
     left: 0;
     transform: translateY(-50%);
     width: 100%;
-    transition: top .2s;
+    transition: top 0.2s;
   }
 
   &__btn:hover &__btn-text-one {
@@ -140,43 +141,69 @@
 }
 
 .slideshow-rev {
-    height: 100%;
-    overflow: hidden;
+  height: 100%;
+  overflow: hidden;
 }
 
 .slideshow-rev-wrapper {
-    display: flex;
-    width: 400%;
-    height: 100%;
-    position: relative;
-    animation: slideshow-rev 20s infinite;
+  display: flex;
+  width: 400%;
+  height: 100%;
+  position: relative;
+  animation: slideshow-rev 20s infinite;
 }
 
 @keyframes slideshow-rev {
-    0% {left: -300%}
+  0% {
+    left: -300%;
+  }
 
-    10% {left: -300%}
+  10% {
+    left: -300%;
+  }
 
-    15% {left: -200%}
+  15% {
+    left: -200%;
+  }
 
-    25% {left: -200%}
+  25% {
+    left: -200%;
+  }
 
-    30% {left: -100%}
+  30% {
+    left: -100%;
+  }
 
-    40% {left: -100%}
+  40% {
+    left: -100%;
+  }
 
-    45% {left: 0}
+  45% {
+    left: 0;
+  }
 
-    55% {left: 0}
+  55% {
+    left: 0;
+  }
 
-    60% {left: -100%}
+  60% {
+    left: -100%;
+  }
 
-    70% {left: -100%}
+  70% {
+    left: -100%;
+  }
 
-    75% {left: -200%}
+  75% {
+    left: -200%;
+  }
 
-    85% {left: -200%}
+  85% {
+    left: -200%;
+  }
 
-    90% {left: -300%}
+  90% {
+    left: -300%;
+  }
 }
 /* end of banner */

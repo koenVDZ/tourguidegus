@@ -107,14 +107,14 @@
       }
     </script>
     <!-- End Modal Box Video -->
-    <!-- Modal Box Video 03 - Forest , Hikes and Cascades Tour -->
-    <input type="checkbox" id="show-hide-video-3" hidden />
-    <div class="video-wrapper-3">
-      <label for="show-hide-video-3" class="video-wrapper-3__x-btn"
+    <!-- Modal Box Video 05 - Forest, Hikes and Cascades Tour -->
+    <input type="checkbox" id="show-hide-video-5" hidden />
+    <div class="video-wrapper-5">
+      <label for="show-hide-video-5" class="video-wrapper-5__x-btn"
         >&#10005;</label
       >
-      <div class="video-wrapper-3__videCont">
-        <div class="video-wrapper-3__yt_video">
+      <div class="video-wrapper-5__videCont">
+        <div class="video-wrapper-5__yt_video">
           <iframe
             id="v1"
             allowfullscreen=""
@@ -125,12 +125,12 @@
       </div>
     </div>
     <script>
-      var checkBox3 = document.getElementById("show-hide-video-3");
-      if (checkBox3.checked == false) {
+      var checkBox5 = document.getElementById("show-hide-video-5");
+      if (checkBox5.checked == false) {
         document.getElementByClass("ytp-play-button").click();
       }
     </script>
-    <!-- End Modal Box Video -->
+    <!-- End Modal Box Video 05 -->
     <!-- Modal Box Video 04 - Helicopter Tour -->
     <input type="checkbox" id="show-hide-video-4" hidden />
     <div class="video-wrapper-4">
@@ -159,12 +159,14 @@
       <!-- Header -->
       <header class="site-header">
         <div class="wrapper">
-          <div class="site-header__logo">
-            <img
-              class="site-header__image"
-              src="assets/images/icons/tour-guide-gus-logo.png"
-            />
-          </div>
+          <a href="/index.html">
+            <div class="site-header__logo">
+              <img
+                class="site-header__image"
+                src="assets/images/icons/tour-guide-gus-logo.png"
+              />
+            </div>
+          </a>
 
           <div class="site-header__menu-icon">
             <div class="site-header__menu-icon__middle"></div>
@@ -177,13 +179,17 @@
             <nav class="primary-nav primary-nav--pull-right">
               <ul>
                 <li>
-                  <a href="/tours.html#attractions" id="attractions-link">Attractions</a>
+                  <a href="/index.html#attractions" id="attractions-link"
+                    >Attractions</a
+                  >
                 </li>
-                <li><a href="/tours.html#services" id="services-link">Services</a></li>
-                <li><a href="/tours.html" id="tours-link">Tours</a></li>
-                <li><a href="/tours.html#about" id="about-link">About</a></li>
                 <li>
-                  <a href="/tours.html#testimonials" id="testimonials-link"
+                  <a href="/index.html#services" id="services-link">Services</a>
+                </li>
+                <li><a class="site-header__tours" href="#tours" id="tours-link">Tours</a></li>
+                <li><a href="/index.html#about" id="about-link">About</a></li>
+                <li>
+                  <a href="/index.html#testimonials" id="testimonials-link"
                     >Testimonials</a
                   >
                 </li>
@@ -226,632 +232,117 @@
         <div class="large-hero__text-content">
           <div class="wrapper">
             <h1 class="large-hero__title">Guided Tours!</h1>
-            <p class="large-hero__description">
-              Tours for every niche.
-            </p>
+            <p class="large-hero__description">Tours for every taste.</p>
           </div>
         </div>
       </div>
-      <!-- Attractions -->
+      <!-- Tours -------------------------------------------------------------------->
       <div
-        id="attractions"
-        class="page-section"
-        data-matching-link="#attractions-link"
-      >
-        <div class="wrapper">
-          <h2
-            class="
-              headline
-              headline--centered
-              headline--light
-              headline--b-margin-small
-            "
-          >
-            Just a sample of the <strong>attractions </strong>we are offering
-          </h2>
-          <h3
-            class="
-              headline
-              headline--centered
-              headline--orange
-              headline--small
-              headline--narrow
-              headline--light
-            "
-          >
-            Our goal is making sure your stay in
-            <strong>Rio de Janeiro</strong> will become an unforgettable
-            Experience.
-          </h3>
-        </div>
-      </div>
-      <!-- banner 01 ------------------------------------------------------------------------------------------>
-      <div class="banner">
-        <div class="banner__slider">
-          <div class="banner__content">
-            <h1 class="banner__heading">"One day trip in Rio"</h1>
-            <a href="#" class="open-modal">
-              <button class="banner__btn">
-                <span class="banner__btn-text-one">Contact Me Now!</span>
-                <span class="banner__btn-text-two">You won't regret it</span>
-              </button>
-            </a>
-          </div>
-          <div class="slideshow-rev">
-            <button class="slide-btn slide-btn-1"></button>
-            <button class="slide-btn slide-btn-2"></button>
-            <button class="slide-btn slide-btn-3"></button>
-            <button class="slide-btn slide-btn-4"></button>
-            <div class="slideshow-rev-wrapper">
-              <div class="slide">
-                <img src="assets/images/sugarloaf_960x540.jpg" />
-              </div>
-              <div class="slide">
-                <img src="assets/images/sao_sebastian_960x540.jpg" />
-              </div>
-              <div class="slide">
-                <img src="assets/images/cristo_closup_960x540.jpg" />
-              </div>
-              <div class="slide">
-                <img src="assets/images/view_from_sugarloaf_960x540.jpg" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="banner__info">
-          <div class="banner__wrapper">
-            <p class="banner__text">
-              Visiting the main and must-see sites. That covers the Statue of
-              Christ, riding the train all the way to the top, through the
-              National Park, part of Tijuca Forest. We also visit Sugar Loaf,
-              riding the cable car to the top of the two hills. On top of it, we
-              visit the Metropolitan Cathedral and a drive through the city
-              center, seeing some old and new all mixed. A stop for lunch of
-              your choice or follow my recommendation for a traditional and
-              local spot.
-            </p>
-            <p class="banner__sub-text">*Tickets and lunch are not included.</p>
-          </div>
-        </div>
-      </div>
-      <!-- End of banner text -->
-      <!-- banner 02 ------------------------------------------------------------------------------------------>
-      <div class="banner-reverse">
-        <!-- banner-reverse -->
-        <div class="banner-reverse__slider">
-          <div class="banner-reverse__content">
-            <h1 class="banner-reverse__heading">"Wedding in Rio!"</h1>
-            <a href="#" class="open-modal">
-              <button class="banner-reverse__btn">
-                <span class="banner-reverse__btn-text-one"
-                  >Contact Me Now!</span
-                >
-                <span class="banner-reverse__btn-text-two"
-                  >You won't regret it</span
-                >
-              </button>
-            </a>
-          </div>
-          <div class="slideshow">
-            <button class="slide-btn slide-btn-1"></button>
-            <button class="slide-btn slide-btn-2"></button>
-            <button class="slide-btn slide-btn-3"></button>
-            <button class="slide-btn slide-btn-4"></button>
-            <div class="slideshow-wrapper">
-              <div class="slide">
-                <img src="assets/images/karen_art_1_960x540.jpg" />
-              </div>
-              <div class="slide">
-                <img src="assets/images/karen_art_2_960x540.jpg" />
-              </div>
-              <div class="slide">
-                <img src="assets/images/karen_art_3_960x540.jpg" />
-              </div>
-              <div class="slide">
-                <img src="assets/images/karen_art_4_960x540.jpg" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="banner-reverse__info">
-          <div class="banner-reverse__wrapper">
-            <i class="banner-reverse__icon far fa-rings-wedding"></i>
-            <p class="banner-reverse__text">
-              Make your dream come true. Get married on a paradisiac beach ,in a
-              tropical forest or elsewhere.Tell us what your dream is or leave
-              it all up to us and we'll put it all together.
-            </p>
-            <p class="banner-reverse__sub-text"></p>
-            <div class="banner-reverse__anchor">
-              <button class="banner-reverse__btn">
-                <label class="banner-reverse__btn-label" for="show-hide-video"
-                  ><i class="fab fa-youtube"></i> Play Wedding Video</label
-                >
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End of banner-reverse text -->
-
-      <!-- banner 03 ------------------------------------------------------------------------------------------>
-      <div class="banner">
-        <div class="banner__slider">
-          <div class="banner__content">
-            <h1 class="banner__heading">"Walking Tour"</h1>
-            <a href="#" class="open-modal">
-              <button class="banner__btn">
-                <span class="banner__btn-text-one">Contact Me Now!</span>
-                <span class="banner__btn-text-two">You won't regret it</span>
-              </button>
-            </a>
-          </div>
-          <div class="slideshow-rev">
-            <button class="slide-btn slide-btn-1"></button>
-            <button class="slide-btn slide-btn-2"></button>
-            <button class="slide-btn slide-btn-3"></button>
-            <button class="slide-btn slide-btn-4"></button>
-            <div class="slideshow-rev-wrapper">
-              <div class="slide">
-                <img src="assets/images/centro_960x540.jpg" />
-              </div>
-              <div class="slide">
-                <img src="assets/images/cobra_960x540.jpg" />
-              </div>
-              <div class="slide">
-                <img src="assets/images/museo_de_amanha_960x540.jpg" />
-              </div>
-              <div class="slide">
-                <img src="assets/images/teatro_municipal_960x540.jpg" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="banner__info">
-          <div class="banner__wrapper">
-            <p class="banner__text">
-              This is a very authentic tour as we can walk all over certain
-              areas of interest. This can be dosed according to your pace. We
-              can drive and walk , drive again and walk more or just drive ,park
-              and then do the whole tour walking. This can last 4/6 or 8 hours(
-              3/4 or 6 miles of walking) with a strategic stop for lunch at a
-              traditional and local place. It covers the historical area , old
-              town , the Olympic Boulevard ,Santa Teresa or elsewhere , in order
-              to suit your interests.
-            </p>
-            <p class="banner__sub-text">*Tickets and lunch are not included.</p>
-          </div>
-        </div>
-      </div>
-      <!-- End of banner text -->
-
-      <!-- banner 04 ------------------------------------------------------------------------------------------>
-      <div class="banner-reverse">
-        <!-- banner-reverse -->
-        <div class="banner-reverse__slider">
-          <div class="banner-reverse__content">
-            <h1 class="banner-reverse__heading">"Food Tour"</h1>
-            <a href="#" class="open-modal">
-              <button class="banner-reverse__btn">
-                <span class="banner-reverse__btn-text-one"
-                  >Contact Me Now!</span
-                >
-                <span class="banner-reverse__btn-text-two"
-                  >You won't regret it</span
-                >
-              </button>
-            </a>
-          </div>
-          <div class="slideshow">
-            <button class="slide-btn slide-btn-1"></button>
-            <button class="slide-btn slide-btn-2"></button>
-            <button class="slide-btn slide-btn-3"></button>
-            <button class="slide-btn slide-btn-4"></button>
-            <div class="slideshow-wrapper">
-              <div class="slide">
-                <img src="assets/images/gus_eating_960x540.jpg" />
-              </div>
-              <div class="slide">
-                <img src="assets/images/moqueca_960x540.jpg" />
-              </div>
-              <div class="slide">
-                <img src="assets/images/feijoada_960x540.jpg" />
-              </div>
-              <div class="slide">
-                <img src="assets/images/caipirinha_960x540.jpg" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="banner-reverse__info">
-          <div class="banner-reverse__wrapper">
-            <i class="banner-reverse__icon far fa-utensils-alt"></i>
-            <p class="banner-reverse__text">
-              A Gastronomic fun experience in Rio where you can taste several
-              different and typical fruits , finger foods , pastries , dishes
-              and drinks of Brasil , with a special focus on the traditions of
-              Rio. On this tour we walk in a farmer s market for fruits tasting
-              , sugar cane juice with "Pastel" , then we walk and grab several
-              different types of food throughout the city ,stopping for lunch to
-              eat the famous "Moqueca" or "Feijoada" and we finish up the day at
-              the trendy "Bar da Urca" where locals have pastries and beer
-              ,right by the bay area ,with a magnificent view.
-            </p>
-            <p class="banner-reverse__sub-text"></p>
-            <div class="banner-reverse__anchor">
-              <button class="banner-reverse__btn">
-                <label class="banner-reverse__btn-label" for="show-hide-video-2"
-                  ><i class="fab fa-youtube"></i> Play Food Video</label
-                >
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End of banner-reverse text -->
-
-      <!-- banner 05 ------------------------------------------------------------------------------------------>
-      <div class="banner">
-        <div class="banner__slider">
-          <div class="banner__content">
-            <h1 class="banner__heading">"Hang gliding in Rio"</h1>
-            <a href="#" class="open-modal">
-              <button class="banner__btn">
-                <span class="banner__btn-text-one">Contact Me Now!</span>
-                <span class="banner__btn-text-two">You won't regret it</span>
-              </button>
-            </a>
-          </div>
-          <div class="slideshow-rev">
-            <button class="slide-btn slide-btn-1"></button>
-            <button class="slide-btn slide-btn-2"></button>
-            <button class="slide-btn slide-btn-3"></button>
-            <button class="slide-btn slide-btn-4"></button>
-            <div class="slideshow-rev-wrapper">
-              <div class="slide">
-                <img src="assets/images/asa_delta_1.jpeg" />
-              </div>
-              <div class="slide">
-                <img src="assets/images/asa_delta_2.jpeg" />
-              </div>
-              <div class="slide">
-                <img src="assets/images/asa_delta_3.jpeg" />
-              </div>
-              <div class="slide">
-                <img src="assets/images/asa_delta_4.jpeg" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="banner__info">
-          <div class="banner__wrapper">
-            <p class="banner__text">
-              Hang gliding in Rio. Enjoy this unique, thrilling and very safe
-              experience with the top pilots of Rio. Pick up at the hotel, fly
-              for about 20 minutes, over the forest , the water , jumping off a
-              550 m hill and landing on this white sandy beach . We book you
-              with one of our 5 different best pilots and partners in Rio. Drop
-              off at your hotel.
-            </p>
-            <p class="banner__sub-text"></p>
-            <div class="banner-reverse__anchor">
-              <button class="banner-reverse__btn">
-                <label class="banner-reverse__btn-label" for="show-hide-video-3"
-                  ><i class="fab fa-youtube"></i> Play Hang Gliding Video</label
-                >
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End of banner text -->
-
-      <!-- banner 06 ------------------------------------------------------------------------------------------>
-      <div class="banner-reverse">
-        <!-- banner-reverse -->
-        <div class="banner-reverse__slider">
-          <div class="banner-reverse__content">
-            <h1 class="banner-reverse__heading">"Cooking Class"</h1>
-            <a href="#" class="open-modal">
-              <button class="banner-reverse__btn">
-                <span class="banner-reverse__btn-text-one"
-                  >Contact Me Now!</span
-                >
-                <span class="banner-reverse__btn-text-two"
-                  >You won't regret it</span
-                >
-              </button>
-            </a>
-          </div>
-          <div class="slideshow">
-            <button class="slide-btn slide-btn-1"></button>
-            <button class="slide-btn slide-btn-2"></button>
-            <button class="slide-btn slide-btn-3"></button>
-            <button class="slide-btn slide-btn-4"></button>
-            <div class="slideshow-wrapper">
-              <div class="slide">
-                <img src="assets/images/cook_in_rio_001.jpeg" />
-              </div>
-              <div class="slide">
-                <img src="assets/images/cook_in_rio_002.jpeg" />
-              </div>
-              <div class="slide">
-                <img src="assets/images/cook_in_rio_003.jpeg" />
-              </div>
-              <div class="slide">
-                <img src="assets/images/cook_in_rio_004.jpeg" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="banner-reverse__info">
-          <div class="banner-reverse__wrapper">
-            <i class="banner-reverse__icon far fa-utensils-alt"></i>
-            <p class="banner-reverse__text">
-              This specific tour gives you a practical class on how to make some
-              traditional dishes of Brazil, with a special touch on Rio. With
-              the best English-speaking Chefs. Learn, since the first steps, how
-              to prepare an authentic Feijoada, a Moqueca, Farofa and the famous
-              and delicious Caipirinha. And the best: at the end everyone sits
-              to eat and drink, celebrating the final result.
-            </p>
-            <p class="banner-reverse__sub-text"></p>
-            <div class="banner-reverse__anchor">
-              <button class="banner-reverse__btn">
-                <label class="banner-reverse__btn-label" for="show-hide-video-4"
-                  ><i class="fab fa-youtube"></i> Play Cooking Class
-                  Video</label
-                >
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End of banner-reverse text -->
-      <div class="banner__after"></div>
-
-      <div
-        id="services"
-        class="page-section page-section--blue"
-        data-matching-link="#services-link"
-      >
-        <div class="wrapper">
-          <h2 class="section-title">
-            <img
-              class="section-title__icon"
-              src="assets/images/icons/star.svg"
-            />
-            Our <strong>Services</strong>
-          </h2>
-
-          <div class="row row--gutters-large generic-content-container">
-            <div class="row__medium-6">
-              <div class="services-item">
-                <i class="services-item__icon far fa-person-sign"></i>
-                <h3 class="services-item__title">Private Tours</h3>
-                <p>
-                  We offer private guided tours in and around the city of Rio de
-                  Janeiro. Enjoy the comfort of touring in a private vehicle
-                  with your private guide and driver at your own pace.
-                </p>
-              </div>
-
-              <div class="services-item">
-                <i class="services-item__icon far fa-car-bus"></i>
-                <h3 class="services-item__title">Transfers</h3>
-                <p>
-                  We want to help you from the moment of your arrival in Rio de
-                  Janeiro, whether it be by plane or cruise ship. We can provide
-                  transfers from the airport or the port to your hotel.
-                  Transfers to Buzios, Angra, Paraty or elsewhere is also
-                  possible.
-                </p>
-              </div>
-            </div>
-
-            <div class="row__medium-6">
-              <div class="services-item">
-                <i class="services-item__icon far fa-person-sign"></i>
-                <h3 class="services-item__title">Group Tours</h3>
-                <p>
-                  If you travel on a budget, we can also offer you a spot on one
-                  of the bus tours that will take you to the touristic
-                  highlights of the city.
-                </p>
-              </div>
-
-              <div class="services-item">
-                <i class="services-item__icon far fa-rings-wedding"></i>
-                <h3 class="services-item__title">Wedding Planner</h3>
-                <p>
-                  Make your dream come true and have your wedding in the
-                  &ldquo;Marvelous city&rdquo;. We take care of everything, you
-                  just enjoy your special moment to the fullest.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="about" class="page-section" data-matching-link="#about-link">
-        <div class="wrapper">
-          <div class="row row--gutters">
-            <div
-              class="
-                row__medium-4 row__medium-4--larger row__b-margin-until-medium
-              "
-            >
-              <picture>
-                <source
-                  sizes="404px"
-                  data-srcset="assets/images/about-gus.jpg 404w, assets/images/about-gus-hi-dpi.jpg 808w"
-                  media="(min-width: 1020px)"
-                />
-                <source
-                  sizes="320px"
-                  data-srcset="assets/images/about-gus-portrait.jpg 382w, assets/images/about-gus-portrait-hi-dpi.jpg 764w"
-                  media="(min-width: 800px)"
-                />
-                <img
-                  class="lazyload"
-                  data-srcset="assets/images/about-gus-landscape.jpg 800w, assets/images/about-gus-landscape-hi-dpi.jpg 1600w"
-                  alt="Our founder, Jane Doe"
-                />
-              </picture>
-            </div>
-            <div class="row__medium-8 row__medium-8--smaller">
-              <div class="generic-content-container">
-                <h2 class="headline headline--no-t-margin">
-                  Au<strong>gus</strong>to Guimaraes
-                </h2>
-                <p>
-                  My name is Augusto or you can call me Gus as it's my nickname
-                  acquired during the time that I lived and studied in Oregon,
-                  USA , 30 years ago. I am a licensed local Tour Guide in Rio
-                  with over 20 years of experience in Tourism. I've worked and
-                  still work for some top incoming agencies of Rio, mainly with
-                  my own car that can hold three persons for transfers or four
-                  for sightseeing. You can also book trips for bigger parties
-                  and I'll make sure we have the right vehicle like vans or even
-                  buses for you.
-                </p>
-                <p>
-                  I am available to sort out any of your doubts or questions and
-                  help you make your stay in the city the most pleasant and
-                  unfforgetable one!
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div
-        id="testimonials"
+        id="tours"
         class="
           page-section
           page-section--no-b-padding-until-large
-          page-section--testimonials
+          page-section--tours
         "
-        data-matching-link="#testimonials-link"
+        data-matching-link="#tours-link"
       >
-        <div class="wrapper wrapper--no-padding-until-large">
+        <div class="wrapper--no-padding-until-large">
           <h2 class="section-title section-title--blue">
-            <img
-              class="section-title__icon"
-              src="assets/images/icons/comment.svg"
-            />
-            Real <strong>Testimonials</strong>
+            <i class="tours__icon far fa-person-sign"></i>
+            Guided <strong>Tours</strong>
           </h2>
 
           <div
             class="
+              tours
               row
-              row--gutters
-              row--equal-height-at-large
-              row--gutters-small
               row--t-padding
               generic-content-container
             "
           >
-            <div class="row__large-4">
-              <div class="testimonial">
-                <div class="testimonial__photo">
-                  <img
-                    class="lazyload"
-                    sizes="160px"
-                    data-srcset="assets/images/testimonial-01.jpg 160w, assets/images/testimonial-01-hi-dpi.jpg 320w"
-                    alt="Jane Doe"
-                  />
+            <!-- Tour 1 : Top five in Rio -->
+            <div class="tours__tour">
+              <img src="assets/images/tours/tour_1.jpg" alt="Tourist at the foot of the Christ the Redeemer statue.">
+              <div class="tours_tour-info">
+                <h3 class="testimonial__title">Top five in Rio </h3>
+              </div>
+              <div class="tours__tour-desc">
+                  On this tour we cover 5 must see attractions of Rio.
+                  That can be done in one day, like longer than usual, or split in two different days. I suit the tour according to your pace.
+                  <button class="tours__btn">
+                    <label class="tours__btn-label" for="show-hide-video"
+                      ><i class="fab fa-youtube"></i> See Top Five Video</label
+                    >
+                  </button>
                 </div>
-                <h3 class="testimonial__title">Art & Karen</h3>
-                <h4 class="testimonial__subtitle">Fantastic Wedding!</h4>
-                <p>
-                  &ldquo;Wow, I am not even sure where to start with our review
-                  of Gus and our fairy tale wedding on Jacone Beach. Words
-                  cannot express how thrilled we were with Gus and our wedding.
-                  Absolutely everything was incredible! From the moment we
-                  reached out to him until the end of the wedding day everything
-                  was just amazing. He worked with us to create an unforgettable
-                  day. Every last detail was perfect. There isn't anything we
-                  would do differently. Gus took care of every detail and we
-                  loved every second of our special day. Thanks to all of his
-                  hard work in making our wedding the best day of our lives, we
-                  will cherish our memories forever!&rdquo;
-                </p>
+            </div>
+            <!-- End Tour 1 : Top five in Rio -->
+            <!-- Tour 2 : Football Match at Maracanã Stadium  -->
+            <div class="tours__tour">
+              <img src="assets/images/tours/tour_2.jpg" alt="An atmosphere picture in the Maracana Stadion during a game in Rio de Janeiro.">
+              <div class="tours_tour-info">
+                <h3 class="testimonial__title">Football Match at Maracanã Stadium</h3>
+              </div>
+              <div class="tours__tour-desc">
+                This is without a doubt the most thrilling and passionate experience one can have on Rio. The "heat" inside the stadium, with the crowd of fans, singing, chanting and yelling at the referee, is undiscribable. Fans greet you when there is a goal and people that you never saw, seem to be old friends . We mingle with the fans, at the most joyful area but not among the crazy ones. There are different types of seats, including the special boxes.
+                <button class="tours__btn">
+                  <label class="tours__btn-label" for="show-hide-video-2"
+                    ><i class="fab fa-youtube"></i> See Football Video</label
+                  >
+                </button>
+            </div>
+            </div>
+            <!-- End Tour 2 : Football Match at Maracanã Stadium  -->
+            <!-- Tour 3 : Dois Irmãos / Two brothers Hill tour and hike  -->
+            <div class="tours__tour">
+              <img src="assets/images/tours/tour_3.jpg" alt="A view from the top of the two brothers hill in Rio de Janeiro.">
+              <div class="tours_tour-info">
+                <h3 class="testimonial__title">Dois Irmãos / Two brothers Hill tour and hike</h3>
+              </div>
+              <div class="tours__tour-desc">
+                On this tour we drive through the famous and safe Favela called Vidigal, on a motorcycle, as a passanger, up the curvy and narrow streets, with the so called Motoboys . That will give you a taste of how the community looks and take us to the beginning of the trail . We can also take a stop at the famous "Bar da Laje" to take some pictures and enjoy the gorgeous view.
+                The walk up to the top of the hill is around 50 minutes and the view is breathtaking . On the way down to the main street, we can either walk down or ride with the Motoboys again.
               </div>
             </div>
-
-            <div class="row__large-4">
-              <div class="testimonial">
-                <div class="testimonial__photo">
-                  <img
-                    class="lazyload"
-                    sizes="160px"
-                    data-srcset="assets/images/testimonial-02.jpg 160w, assets/images/testimonial-02-hi-dpi.jpg 320w"
-                    alt="John Smith"
-                  />
-                </div>
-                <h3 class="testimonial__title">Tripadvisor</h3>
-                <h4 class="testimonial__subtitle">Over 450 Reviews</h4>
-                <p>
-                  &ldquo;For more testimonials, please follow the link to
-                  Tripadvisor.&rdquo;
-                </p>
-                <a
-                  class="testimonial__icon-link"
-                  target="_blank"
-                  href="https://www.tripadvisor.com/Attraction_Review-g303506-d4976222-Reviews-TourGuideGus-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html"
-                >
-                  <span class="testimonial__icon-circle">
-                    <i class="testimonial__icon fab fa-tripadvisor"></i>
-                  </span>
-                </a>
-                <a
-                  href="https://www.tripadvisor.com/Attraction_Review-g303506-d4976222-Reviews-TourGuideGus-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html"
-                >
-                  <img
-                    class="testimonial__banner"
-                    src="assets/images/banner-tripadvisor-gus.jpg"
-                    alt="TourGuide Gus Tripadvisor Certificate of excellence"
-                  />
-                </a>
+            <!-- End Tour 3 : Dois Irmãos / Two brothers Hill tour and hike -->
+            <!-- Tour 4 : Helicopter Tour   -->
+            <div class="tours__tour">
+              <img src="assets/images/tours/tour_4.jpg" alt="A family posing in front of a helicopter.">
+              <div class="tours_tour-info">
+                <h3 class="testimonial__title">Helicopter Tour </h3>
               </div>
+              <div class="tours__tour-desc">
+                Do you want to have a previleged and exclusive view of Rio ? Come and let me take you to the best price and benefit helicopter companies . Safe and a very unique experience . 
+                <button class="tours__btn">
+                  <label class="tours__btn-label" for="show-hide-video-4"
+                    ><i class="fab fa-youtube"></i> See Helicopter Tour Video</label
+                  >
+                </button>
             </div>
-
-            <div class="row__large-4">
-              <div class="testimonial testimonial--last">
-                <div class="testimonial__photo">
-                  <img
-                    class="lazyload"
-                    sizes="160px"
-                    data-srcset="assets/images/testimonial-03.jpg 160w, assets/images/testimonial-03-hi-dpi.jpg 320w"
-                    alt="Cat McKitty"
-                  />
-                </div>
-                <h3 class="testimonial__title">Pat & Tony</h3>
-                <h4 class="testimonial__subtitle">A Great Day with Gus</h4>
-                <p>
-                  &ldquo;Gus met us off our cruise ship - dozens of guides &
-                  taxis massing around the port but he spotted us and whisked us
-                  away in his clean a/c car for an action-packed sight-seeing
-                  day. Our 1st time in Rio so we wanted to see as much as
-                  possible in 8 hours. Gus certainly ticked all the boxes with
-                  that brief!! He took us to all the major spots, Corcavado,
-                  Copacabana, lunch on Ipanema beach, Ipanema hippy market,
-                  Sugar Loaf mountain and much more. He fast-tracked us at sites
-                  so as not to loose too much time queueing, his English is
-                  excellent, he was so clued-up about Brazilian history,
-                  culture, socio-economics, food etc and his love of Rio was
-                  infectious. We had a great, fun day and thoroughly enjoyed his
-                  company. Well done Gus....lasting memories.&rdquo;
-                </p>
+            </div>
+            <!-- End Tour 4 : Helicopter Tour  -->
+            <!-- Tour 5 : Forest, Hikes and Cascades Tour   -->
+            <div class="tours__tour">
+              <img src="assets/images/tours/tour_5.jpg" alt="A family posing in front of a helicopter.">
+              <div class="tours_tour-info">
+                <h3 class="testimonial__title">Forest, Hikes and Cascades Tour </h3>
               </div>
+              <div class="tours__tour-desc">
+                On this unique, open air tour, you can enjoy inumerous attractions in one the biggest urban forests in the world . In the national park, in the middle of the city of Rio, you can enjoy, easy, moderate or longer hikes in the over 100 miles of trails . At Tijuca Forest we can breath  fresh air, away from the crowds, bathing at some cascades, going in some caves, watching some wild life, like capuchin monkeys, sloths and several birds like the toucan . You can take wonderful pictures with  gorgeous views of the city 
+                There are several options and I suit the tour according to your needs and pace. Half a day or full day tours.
+                <button class="tours__btn">
+                  <label class="tours__btn-label" for="show-hide-video-5"
+                    ><i class="fab fa-youtube"></i> See Hikes and Cascades Video</label
+                  >
+                </button>
             </div>
+            </div>
+            <!-- End Tour 5 : Forest, Hikes and Cascades Tour  -->
           </div>
         </div>
       </div>
+    </div>
+    <!-- End Tours ---------------------------------------------------------------->
     </div>
     <footer class="site-footer">
       <div class="wrapper">

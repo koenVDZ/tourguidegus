@@ -3,18 +3,22 @@
   position: absolute;
   width: 100%;
   z-index: 52;
-  transition: background-color .3s ease-out;
+  transition: background-color 0.3s ease-out;
+
+  &__tours {
+    color: #d59541;
+  }
 
   &--is-expanded {
-    background-color: rgba(47, 85, 114, .55);
+    background-color: rgba(47, 85, 114, 0.55);
   }
-  
+
   @mixin atMedium {
     position: fixed;
-    background-color: rgba(47, 85, 114, .3);
+    background-color: rgba(47, 85, 114, 0.3);
 
     &--dark {
-      background-color: rgba(23, 51, 72, .85);
+      background-color: rgba(23, 51, 72, 0.85);
     }
   }
 
@@ -29,11 +33,12 @@
   }
 
   &__logo {
+    cursor: pointer;
     position: absolute;
     top: 0;
     left: 50%;
-    transition: transform .3s ease-out;
-    transform: translateX(-50%) scale(.7);
+    transition: transform 0.3s ease-out;
+    transform: translateX(-50%) scale(0.7);
     transform-origin: 50% 0;
     background-color: $mainBlue;
     padding: 25px 36px;
@@ -43,7 +48,7 @@
       transform: translateX(0);
 
       .site-header--dark & {
-        transform: scale(.545);
+        transform: scale(0.545);
       }
     }
   }
@@ -67,9 +72,9 @@
       left: 0;
       width: 20px;
       height: 3px;
-      background-color: #FFF;
+      background-color: #fff;
       transform-origin: 0 0;
-      transition: transform .3s ease-out;
+      transition: transform 0.3s ease-out;
     }
 
     &__middle {
@@ -78,8 +83,8 @@
       left: 0;
       width: 20px;
       height: 3px;
-      background-color: #FFF;
-      transition: all .3s ease-out;
+      background-color: #fff;
+      transition: all 0.3s ease-out;
       transform-origin: 0 50%;
     }
 
@@ -90,9 +95,9 @@
       left: 0;
       width: 20px;
       height: 3px;
-      background-color: #FFF;
+      background-color: #fff;
       transform-origin: 0 100%;
-      transition: transform .3s ease-out;
+      transition: transform 0.3s ease-out;
     }
 
     @mixin atMedium {
@@ -118,7 +123,7 @@
   &__menu-content {
     opacity: 0;
     transform: scale(1.2);
-    transition: all .3s ease-out;
+    transition: all 0.3s ease-out;
     position: relative;
     z-index: -10;
     padding-top: 90px;
