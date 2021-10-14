@@ -39,6 +39,17 @@
     font-weight: 300;
   }
 
+  &__icon {
+    text-align: center;
+    display: block;
+    color: $mainOrange;
+    margin: 0 auto;
+    font-size: 3rem;
+
+    @mixim atXLarge {
+      font-size: 6rem;
+    }
+  }
   &__sub-text {
     text-align: left;
   }

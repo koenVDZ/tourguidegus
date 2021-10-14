@@ -1,9 +1,32 @@
+.btn-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .btn {
   background-color: $mainBlue;
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
-  padding: .75rem 1.2rem;
+  padding: 0.75rem 1.2rem;
   display: inline-block;
+
+  &--wide {
+    width: 24rem;
+    position: relative;
+  }
+
+  &--icon {
+    position: absolute;
+    left: 1.5rem;
+    top: 0.8rem;
+  }
+
+  &--txt-up {
+    position: absolute;
+    left: 4rem;
+    top: 1.3rem;
+  }
 
   &--orange {
     background-color: $mainOrange;
@@ -16,5 +39,4 @@
       font-size: 1.25rem;
     }
   }
-
 }
