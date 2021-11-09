@@ -8,7 +8,7 @@
   background-color: $mainBlue;
   color: #fff;
   text-decoration: none;
-  padding: 0.75rem 1.2rem;
+  padding: 0.75rem 0.75rem;
   display: inline-block;
 
   &--wide {
@@ -16,6 +16,10 @@
     position: relative;
   }
 
+  &--wide2 {
+    width: 21rem;
+    position: relative;
+  }
   &--icon {
     position: absolute;
     left: 1.5rem;

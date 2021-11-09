@@ -38,11 +38,11 @@
     <link rel="manifest" href="assets/images/favicon/site.webmanifest" />
     <meta
       name="keywords"
-      content="Travel planning, travel bundles, travel escapes, affordable travel, Private tours, Transfers, Airport Transfers, Shore Excursions"
+      content="Travel planning, Travel bundles, Travel escapes, Affordable travel, Private tours, Transfers, Airport Transfers, Shore Excursions, Tour guide, Guided tours, Rio de Janeiro local guide , Exclusive tours, Be a local, local guide in Rio, Trip advisor, Top ranked tour guide, Top guides, Cruise critic, High class tours, Five star tour guide, Five star tours, Local experience in Rio, Immersion tours in Rio, Waking tour in Rio, Best price and benefit tours in Rio ,  Best guides in Rio , Best reviewed tour guide in Rio, Number one guide in Rio , Trails and Hikes in Rio, Off beaten tours in Rio , Tailor made tours in Rio, Secret gems of Rio, Safe and  accommodating tours in Rio, Favela tour, local experience in the favelas of Rio, beneficial tours in the favelas, Soccer match at Maracana, Wedding on a secluded beach, Wild beaches of Rio, Nude beach in Rio , Apricot beach, Food tour, gastronomic tour in Rio, cooking class, Street markets in Rio, Somebody feed Phil tour, Santa Teresa tram ride, Historical tours in Rio, Colombo cafeteria, Olympic city of Rio, Football match in Rio, Transfers to Búzios, Búzios tour, transfer to Paraty, Paraty tours, Ilha Grande transfer and tour, Transfer to Angra, Petropolis tour , transfer to Petropolis, Shared tours, Bird watching in Rio, Botanical garden , Forest tour , Tijuca Forest, Trails in Rio"
     />
     <meta
       name="description"
-      content="Taylor made private tours in Rio de Janeiro."
+      content="Tailor-made private tours in Rio de Janeiro."
     />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -61,6 +61,46 @@
   </head>
 
   <body>
+      <!-- Get In Touch ------------------------------------------------------------->
+      <div class="modal">
+        <div class="modal__inner">
+          <h2 class="section-title section-title--blue section-title--less-margin"><img src="assets/images/icons/mail.svg" class="section-title__icon"> Get in <strong>Touch</strong></h2>
+          <div class="wrapper wrapper--narrow">
+            <p class="modal__description">You can get in touch with me through different channels, please choose the one which suits you most, I will get back to you as soon as I can.</p>
+          </div>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/augusto.guimaraes.71" target="_blank" class="social-icons__icon-box"><i class="social-icons__icon fab fab fa-facebook-f"></i></a>
+            <a href="https://www.tripadvisor.com/Attraction_Review-g303506-d4976222-Reviews-TourGuideGus-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html" target="_blank" class="social-icons__icon-box"><i class="social-icons__icon fab fab fa-tripadvisor"></i></a>
+            <a href="https://www.youtube.com/channel/UCJHFPn6S6cizFi5PmVEMnwA/featured" target="_blank" class="social-icons__icon-box"><i class="social-icons__icon fab fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/augusto.guimaraes.71/?hl=en" target="_blank" class="social-icons__icon-box"><i class="social-icons__icon fab fab fa-instagram"></i></a>
+            <a href="https://wa.me/5521976601175" target="_blank" class="social-icons__icon-box"><i class="social-icons__icon fab fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="modal__close">X</div>
+      </div>
+      <script>
+        let modalGit = document.querySelector(".modal");
+        let closeIconGit = document.querySelector(".modal__close");
+        closeIconGit.addEventListener("click", () => closeTheModal());
+        document.addEventListener("keyup", (e) => keyPressHandler(e));
+        closeIconGit.addEventListener("click", () => closeTheModal());
+        document.addEventListener("keyup", (e) => keyPressHandler(e));
+
+        function keyPressHandler(e) {
+          if (e.keyCode == 27) {
+            closeTheModal();
+          }
+        }
+
+        function openTheModal() {
+          modalGit.classList.add("modal--is-visible");
+        }
+
+        function closeTheModal() {
+          modalGit.classList.remove("modal--is-visible");
+        }
+      </script>
+      <!-- Get In Touch End --------------------------------------------------------->
     <!-- Modal Box Video 01 - Top five in Rio  -->
     <input type="checkbox" id="show-hide-video" hidden />
     <div class="video-wrapper">
@@ -77,12 +117,6 @@
         </div>
       </div>
     </div>
-    <script>
-      var checkBox = document.getElementById("show-hide-video");
-      if (checkBox.checked == false) {
-        document.getElementByClass("ytp-play-button").click();
-      }
-    </script>
     <!-- End Modal Box Video -->
     <!-- Modal Box Video 02 - Football Match at Maracanã Stadium -->
     <input type="checkbox" id="show-hide-video-2" hidden />
@@ -102,12 +136,6 @@
         </div>
       </div>
     </div>
-    <script>
-      var checkBox2 = document.getElementById("show-hide-video-2");
-      if (checkBox2.checked == false) {
-        document.getElementByClass("ytp-play-button").click();
-      }
-    </script>
     <!-- End Modal Box Video -->
     <!-- Modal Box Video 03 - Two Brothers -->
     <input type="checkbox" id="show-hide-video-3" hidden />
@@ -127,12 +155,6 @@
         </div>
       </div>
     </div>
-    <script>
-      var checkBox3 = document.getElementById("show-hide-video-3");
-      if (checkBox3.checked == false) {
-        document.getElementByClass("ytp-play-button").click();
-      }
-    </script>
     <!-- End Modal Box Video 03 -->
     <!-- Modal Box Video 04 - Helicopter Tour -->
     <input type="checkbox" id="show-hide-video-4" hidden />
@@ -152,12 +174,6 @@
         </div>
       </div>
     </div>
-    <script>
-      var checkBox4 = document.getElementById("show-hide-video-4");
-      if (checkBox4.checked == false) {
-        document.getElementByClass("ytp-play-button").click();
-      }
-    </script>
     <!-- End Modal Box Video -->
     <!-- Modal Box Video 05 - Forest, Hikes and Cascades Tour -->
     <input type="checkbox" id="show-hide-video-5" hidden />
@@ -177,38 +193,86 @@
         </div>
       </div>
     </div>
-    <script>
-      var checkBox5 = document.getElementById("show-hide-video-5");
-      if (checkBox5.checked == false) {
-        document.getElementByClass("ytp-play-button").click();
-      }
-    </script>
     <!-- End Modal Box Video 05 -->
-<!-- Modal Box Video 06 - Forest, Hikes and Cascades Tour -->
-<input type="checkbox" id="show-hide-video-6" hidden />
-<div class="video-wrapper-6">
-  <label for="show-hide-video-6" class="video-wrapper-6__x-btn"
-    >&#10005;</label
-  >
-  <div class="video-wrapper-6__videCont">
-    <div class="video-wrapper-6__yt_video">
-      <iframe
-        id="v1"
-        allowfullscreen=""
-        frameborder="0"
-        src="https://www.youtube.com/embed/WlFeG90FBJ4?autoplay=1?fs=0?playsinline=1"
-        class="video-iframe"
-      ></iframe>
+    <!-- Modal Box Video 07 - Favela Tour -->
+    <input type="checkbox" id="show-hide-video-7" hidden />
+    <div class="video-wrapper-7">
+      <label for="show-hide-video-7" class="video-wrapper-7__x-btn"
+        >&#10005;</label
+      >
+      <div class="video-wrapper-7__videCont">
+        <div class="video-wrapper-7__yt_video">
+          <iframe
+            id="v1"
+            allowfullscreen=""
+            frameborder="0"
+            src="https://www.youtube.com/embed/WlFeG90FBJ4?autoplay=1?fs=0?playsinline=1"
+            class="video-iframe"
+          ></iframe>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-<script>
-  var checkBox6 = document.getElementById("show-hide-video-6");
-  if (checkBox6.checked == false) {
-    document.getElementByClass("ytp-play-button").click();
-  }
-</script>
-<!-- End Modal Box Video 06 -->
+    <!-- End Modal Box Video 07 Favela tour -->
+
+    <!-- Modal Box Video 08 - Golden Tamarin -->
+    <input type="checkbox" id="show-hide-video-8" hidden />
+    <div class="video-wrapper-8">
+      <label for="show-hide-video-8" class="video-wrapper-8__x-btn"
+        >&#10005;</label
+      >
+      <div class="video-wrapper-8__videCont">
+        <div class="video-wrapper-8__yt_video">
+          <iframe
+            id="v1"
+            allowfullscreen=""
+            frameborder="0"
+            src="https://www.youtube.com/embed/hW8tuoSY9Fg?autoplay=1?fs=0?playsinline=1"
+            class="video-iframe"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal Box Video 08 -->
+
+    <!-- Modal Box Video 09 - Wild beaches of Rio -->
+    <input type="checkbox" id="show-hide-video-9" hidden />
+    <div class="video-wrapper-9">
+      <label for="show-hide-video-9" class="video-wrapper-9__x-btn"
+        >&#10005;</label
+      >
+      <div class="video-wrapper-9__videCont">
+        <div class="video-wrapper-9__yt_video">
+          <iframe
+            id="v1"
+            allowfullscreen=""
+            frameborder="0"
+            src="https://www.youtube.com/embed/uw04c511WWg?autoplay=1?fs=0?playsinline=1"
+            class="video-iframe"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal Box Video 09 -->
+
+    <!-- Modal Box Video 10 - Backstage of Carnival  -->
+    <input type="checkbox" id="show-hide-video-10" hidden />
+    <div class="video-wrapper-10">
+      <label for="show-hide-video-10" class="video-wrapper-10__x-btn"
+        >&#10005;</label
+      >
+      <div class="video-wrapper-10__videCont">
+        <div class="video-wrapper-10__yt_video">
+          <iframe
+            id="v1"
+            allowfullscreen=""
+            frameborder="0"
+            src="https://www.youtube.com/embed/rAiGfLIDNTQ?autoplay=1?fs=0?playsinline=1"
+            class="video-iframe"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal Box Video 10 -->
 
     <div class="site-container">
       <!-- Header -->
@@ -291,6 +355,7 @@
           </div>
         </div>
       </div>
+
       <!-- Tours -------------------------------------------------------------------->
       <div
         id="tours"
@@ -381,9 +446,10 @@
             </div>
             </div>
             <!-- End Tour 4 : Helicopter Tour  -->
+
             <!-- Tour 5 : Forest, Hikes and Cascades Tour   -->
             <div class="tours__tour">
-              <img src="assets/images/tours/tour_5.jpg" alt="A family posing in front of a helicopter.">
+              <img src="assets/images/tours/tour_5.jpg" alt="Tour Guide Gus on top of a rock in front of the landscape of Rio de Janeiro.">
               <div class="tours_tour-info">
                 <h3 class="testimonial__title">Forest, Hikes and Cascades Tour </h3>
               </div>
@@ -398,6 +464,89 @@
             </div>
             </div>
             <!-- End Tour 5 : Forest, Hikes and Cascades Tour  -->
+
+            <!-- Tour 6 : Tailor made tours   -->
+            <div class="tours__tour">
+              <img src="assets/images/tours/tour_6.jpg" alt="Collage of views from Rio de Janeiro.">
+              <div class="tours_tour-info">
+                <h3 class="testimonial__title">Tailor made tours </h3>
+              </div>
+              <div class="tours__tour-desc">
+                On this tour you can choose and mix whatever site or location you wish. It can be organized on a special request you might have . I can organize it on a hourly basis or at a fixed price . This can also suit corporate , business people.
+                It can be done in a high standard car , van , bus or even an armed vehicle. Any of these options with a driver and guide or in a sedan car , with a driverguide , when the tour guide drives his own car.
+              </div>
+            </div>
+            <!-- End Tour 6 : Tailor made tours  -->
+
+            <!-- Tour 7 : Favela tour  -->
+            <div class="tours__tour">
+              <img src="assets/images/tours/tour_7.jpg" alt="Tour Guide Gus at the statue of Michael Jackson in Rio de Janeiro.">
+              <div class="tours_tour-info">
+                <h3 class="testimonial__title">Favela tour</h3>
+              </div>
+              <div class="tours__tour-desc">
+                I call it an experience tour as you can interact with the locals and artists . It is not an intrusive tour as it is beneficial to the community. We can just drive through the main street of the biggest one in Rio or take a walk inside , exploring with total safety. There are different Favelas so we decide which one you want to see ,including Rocinha , Vidigal or Santa Marta . All three have wonderful viewpoints. This is  a half a day tour.
+                <button class="tours__btn">
+                  <label class="tours__btn-label" for="show-hide-video-7"
+                    ><i class="fab fa-youtube"></i> See Favela Video</label
+                  >
+                </button>
+            </div>
+            </div>
+            <!-- End Tour 7 : Favela tour -->
+
+            <!-- Tour 8 : Golden Lion Tamarin   -->
+            <div class="tours__tour">
+              <img src="assets/images/tours/tour_8.jpg" alt="Golden Lion Tamarin.">
+              <div class="tours_tour-info">
+                <h3 class="testimonial__title">Golden Lion Tamarin </h3>
+              </div>
+              <div class="tours__tour-desc">
+                This Exciting and unique tour takes you approximately 1h 45 min from Rio , to a sanctuary , in a protected forest area , with a beautiful project that monitors and looks after this beautiful species of monkey. It is the only place in the world where you can find them in the wild. We go spot them in the bushes , feed them with some bananas and visit the headquarters to understand a bit more about the whole project. This a full day tour.
+                <button class="tours__btn">
+                  <label class="tours__btn-label" for="show-hide-video-8"
+                    ><i class="fab fa-youtube"></i> See Golden Tamarin Video</label
+                  >
+                </button>
+              </div>
+            </div>
+            <!-- End Tour 8 : Golden Lion Tamarin  -->
+
+            <!-- Tour 9 : Wild beaches of Rio  -->
+            <div class="tours__tour">
+              <img src="assets/images/tours/tour_9.jpg" alt="Tour Guide Gus with a hidden beach in the background.">
+              <div class="tours_tour-info">
+                <h3 class="testimonial__title">Wild beaches of Rio</h3>
+              </div>
+              <div class="tours__tour-desc">
+                This tour takes you around 45 min away from Copacabana ,driving along the beautiful seaside of Rio. We visit some hidden and secluded beaches like  Secreto , Prainha , Grumari ,  Apricot , Perigoso  and many others. Some of them can only be accessed via trails. This tour can be a mix of a very fun and relaxing day , with some good exercise and gorgeous nature hikes . I can dose the tour according to your pace as there are different options. This is usually a full day tour.                <button class="tours__btn">
+                  <label class="tours__btn-label" for="show-hide-video-9"
+                    ><i class="fab fa-youtube"></i> See the Hidden Beaches Video</label
+                  >
+                </button>
+            </div>
+            </div>
+            <!-- End Tour 9 : Wild beaches of Rio -->
+
+            <!-- Tour 10 : Backstage of Carnival  -->
+            <div class="tours__tour">
+              <img src="assets/images/tours/tour_10.jpg" alt="Tour Guide Gus posing with a pasista.">
+              <div class="tours_tour-info">
+                <h3 class="testimonial__title">Backstage of Carnival</h3>
+              </div>
+              <div class="tours__tour-desc">
+                This is a great opportunity for the tourist to understand what is behind the scenes of the biggest carnival festival in the world. You understand more about the preparation and how the parades are organized.
+                We visit the City of Samba where the big warehouses are. We take a tour inside , seeing the huge  floats , the costumes  and learn a bit more about the history of Carnival 
+                The gran finale is putting on a real costume and dancing with some Samba ladies. The workshop is every day , except sunday  . Half a day tour.
+                <button class="tours__btn">
+                  <label class="tours__btn-label" for="show-hide-video-10"
+                    ><i class="fab fa-youtube"></i> See Backstage of Carnival Video</label
+                  >
+                </button>
+              </div>
+            </div>
+            <!-- End Tour 10 : Backstage of Carnival -->
+
           </div>
         </div>
       </div>

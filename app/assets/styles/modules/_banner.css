@@ -104,6 +104,19 @@
     overflow: hidden;
   }
 
+  &__btn_youtube {
+    cursor: pointer;
+    width: 10rem;
+    height: 3rem;
+    background: linear-gradient(to top, #00154c, #12376e, #23487f);
+    color: #fff;
+    border: 0.1rem solid #fff;
+    border-radius: 0.3rem;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+  }
+
   &__btn-text-one {
     cursor: pointer;
     position: absolute;
