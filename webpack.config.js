@@ -1,6 +1,6 @@
 const currentTask = process.env.npm_lifecycle_event
 const path = require('path')
-const {CleanWebpackPlugin} = require('clean-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
@@ -11,17 +11,12 @@ const postCSSPlugins = [
   require('postcss-mixins'),
   require('postcss-simple-vars'),
   require('postcss-nested'),
-  // If in the future the creator of the postcss-hexrgba package
-  // releases an update (it is version 2.0.1 as I'm writing this)
-  // then it will likely work with PostCSS V8 so you can uncomment
-  // the line below and also install the package with npm.
-  //require('postcss-hexrgba'),
   require('autoprefixer')
 ]
 
 class RunAfterCompile {
   apply(compiler) {
-    compiler.hooks.done.tap('Copy images', function() {
+    compiler.hooks.done.tap('Copy images', function () {
       fse.copySync('./app/assets/images', './dist/assets/images')
     })
   }
@@ -29,25 +24,36 @@ class RunAfterCompile {
 
 let cssConfig = {
   test: /\.css$/i,
-  use: ['css-loader?url=false', {loader: 'postcss-loader', options: {postcssOptions: {plugins: postCSSPlugins}}}]
+  use: [
+    'css-loader?url=false',
+    {
+      loader: 'postcss-loader',
+      options: {
+        postcssOptions: {
+          plugins: postCSSPlugins
+        }
+      }
+    }
+  ]
 }
 
-let pages = fse.readdirSync('./app').filter(function(file) {
-  return file.endsWith('.html')
-}).map(function(page) {
-  return new HtmlWebpackPlugin({
-    filename: page,
-    template: `./app/${page}`
-  })
-})
+let pages = fse
+    .readdirSync('./app')
+    .filter(function (file) {
+      return file.endsWith('.html')
+    })
+    .map(function (page) {
+      return new HtmlWebpackPlugin({
+        filename: page,
+        template: `./app/${page}`
+      })
+    })
 
 let config = {
   entry: './app/assets/scripts/App.js',
   plugins: pages,
   module: {
-    rules: [
-      cssConfig
-    ]
+    rules: [cssConfig]
   }
 }
 
@@ -58,12 +64,12 @@ if (currentTask == 'dev') {
     path: path.resolve(__dirname, 'app')
   }
   config.devServer = {
-    before: function(app, server) {
-      server._watch('./app/**/*.html')
+    static: {
+      directory: path.join(__dirname, 'app')
     },
-    contentBase: path.join(__dirname, 'app'),
+    watchFiles: ['./app/**/*.html'],
     hot: true,
-    port: 3002,
+    port: 30300,
     host: '0.0.0.0'
   }
   config.mode = 'development'
@@ -80,7 +86,6 @@ if (currentTask == 'build') {
       }
     }
   })
-
   cssConfig.use.unshift(MiniCssExtractPlugin.loader)
   config.output = {
     filename: '[name].[chunkhash].js',
@@ -89,14 +94,14 @@ if (currentTask == 'build') {
   }
   config.mode = 'production'
   config.optimization = {
-    splitChunks: {chunks: 'all'},
+    splitChunks: { chunks: 'all' },
     minimize: true,
-    minimizer: [`...`, new CssMinimizerPlugin()]
+    minimizer: ['...', new CssMinimizerPlugin()]
   }
   config.plugins.push(
-    new CleanWebpackPlugin(),
-    new MiniCssExtractPlugin({filename: 'styles.[chunkhash].css'}),
-    new RunAfterCompile()  
+      new CleanWebpackPlugin(),
+      new MiniCssExtractPlugin({ filename: 'styles.[chunkhash].css' }),
+      new RunAfterCompile()
   )
 }
 
