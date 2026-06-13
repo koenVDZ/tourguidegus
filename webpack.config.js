@@ -69,7 +69,7 @@ if (currentTask == 'dev') {
     },
     watchFiles: ['./app/**/*.html'],
     hot: true,
-    port: 30300,
+    port: 3030,
     host: '0.0.0.0'
   }
   config.mode = 'development'
